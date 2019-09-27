@@ -13,20 +13,23 @@ namespace Laboratorio_5_OOP_201902
                 if (c.GetType().Name == nameof(Cards.CombatCard))
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine(c);
+                    Console.WriteLine(hand.Cards.IndexOf(c) + c.Name);
                     Console.ResetColor();
                 }
                 else if (c.GetType().Name == nameof(Cards.SpecialCard))
                 {
                     Console.ForegroundColor = ConsoleColor.Blue;
-                    Console.WriteLine(c);
+                    Console.WriteLine(hand.Cards.IndexOf(c) + c.Name);
                     Console.ResetColor();
                 }
             }
         }
         public static void ShowDeck (List<Deck> decks)
         {
-            
+            foreach (Deck d in Game.decks)
+            {
+
+            }
         }
         public static void ShowCaptains(List<Cards.SpecialCard> captains)
         {
