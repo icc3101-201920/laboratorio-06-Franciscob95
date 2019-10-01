@@ -42,6 +42,12 @@ namespace Laboratorio_5_OOP_201902
                 activePlayer = value;
             }
         }
+
+        /*internal static IEnumerable<Deck> Decks()
+        {
+            throw new NotImplementedException();
+        }*/
+
         public List<Deck> Decks
         {
             get
